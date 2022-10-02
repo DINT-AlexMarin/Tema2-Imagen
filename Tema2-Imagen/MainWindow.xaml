@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tema2_Imagen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_Imagen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Icon="assets/129.ico">
+    <Grid>
+        <Image x:Name="imagen_image" HorizontalAlignment="Left" Height="434" VerticalAlignment="Center" Width="294" Source="/episodioIV.jpg"/>
+        <RadioButton x:Name="opacidadAlta_radioButton" Content="Alta" HorizontalAlignment="Left" Margin="364,91,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" GroupName="opacidad" IsChecked="True"/>
+        <RadioButton x:Name="opacidadMedia_radioButton" Content="Media" HorizontalAlignment="Left" Margin="364,130,0,0" VerticalAlignment="Top" GroupName="opacidad" Checked="opacidadMedia_radioButton_Checked"/>
+        <RadioButton x:Name="opacidadBaja_radioButton" Content="Baja" HorizontalAlignment="Left" Margin="364,167,0,0" VerticalAlignment="Top" Checked="opacidadBaja_radioButton_Checked" GroupName="opacidad"/>
+        <RadioButton x:Name="fill_radioButton" Content="Fill" HorizontalAlignment="Left" Margin="604,167,0,0" VerticalAlignment="Top" Checked="fill_radioButton_Checked" GroupName="stretch"/>
+        <RadioButton x:Name="uniform_radioButton" Content="Uniform" HorizontalAlignment="Left" Margin="604,130,0,0" VerticalAlignment="Top" Checked="uniform_radioButton_Checked" GroupName="stretch"/>
+        <RadioButton x:Name="none_radioButton" Content="None" HorizontalAlignment="Left" Margin="604,91,0,0" VerticalAlignment="Top" Checked="none_radioButton_Checked" GroupName="stretch" IsChecked="True"/>
+        <RadioButton x:Name="uniformToFill_radioButton" Content="UniformToFill" HorizontalAlignment="Left" Margin="604,202,0,0" VerticalAlignment="Top" Checked="uniformtofill_radioButton_Checked" GroupName="stretch"/>
+        <TextBlock HorizontalAlignment="Left" Margin="364,50,0,0" Text="Opacidad" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="601,50,0,0" Text="Ajuste de imagen" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
